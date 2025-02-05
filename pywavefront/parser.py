@@ -156,6 +156,7 @@ class Parser:
         The suffix should be the name of the obj statement
         such as `parse_v` for vertex statements.
         """
+        # FIXME: Wrong way to do this.
         return {"_".join(a.split("_")[1:]): getattr(self, a)
                 for a in dir(self)
                 if a.startswith("parse_")}

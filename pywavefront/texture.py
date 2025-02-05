@@ -187,7 +187,7 @@ class Texture:
         self._search_path = Path(search_path)
         self._path = Path(search_path, self._name)
 
-        # Unsed externally by visualization
+        # Used externally by visualization
         self.image = None
 
     @property
